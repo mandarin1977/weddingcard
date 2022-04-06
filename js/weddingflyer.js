@@ -1,7 +1,8 @@
 // JavaScript Do
-function on_pay() { 
- myform = document.mobileweb; 
- myform.action = "https://mobile.inicis.com/smart/payment/";
- myform.target = "_self";
- myform.submit(); 
-}  
+function copy_to_clipboard() {
+	var copyText = document.getElementById('myInput');
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("Copy");
+	alert('복사되었습니다');
+}
